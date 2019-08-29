@@ -27,8 +27,5 @@ node {
    stage('Deploy to Dev') {
       
    }
-   stage('Deploy to Prod') {
-      
-   }
-   
+     
 }
