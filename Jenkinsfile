@@ -24,9 +24,6 @@ node {
    stage('Docker Build') {
       
    }
-   stage('Deploy to Dev') {
-      
-   }
    stage('Deploy to Prod') {
       
    }
