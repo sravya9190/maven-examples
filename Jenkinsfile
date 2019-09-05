@@ -14,6 +14,13 @@ node {
      }   
    }
    stage('Code Quality') {
+     withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
+     sh 'mvn sonar:sonar \
+        -Dsonar.projectKey=article370-maven \
+        -Dsonar.organization=article370 \
+        -Dsonar.host.url=https://sonarcloud.io \
+        -Dsonar.login=cd592244616035dc27e5e749283e855c44c3eecf'
+     }    
       
    }
    stage('Archival repo') {
