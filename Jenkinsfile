@@ -15,11 +15,7 @@ node {
    }
    stage('Code Quality') {
      withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.0') {
-     sh 'mvn sonar:sonar \
-        -Dsonar.projectKey=new-org \
-  -Dsonar.organization=new-org \
-  -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=972d86d7fb9a7ebe0422e5168259d71edbbf4558 
+     
 
 
      }    
