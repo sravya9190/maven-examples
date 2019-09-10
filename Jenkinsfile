@@ -1,7 +1,7 @@
 node {
    
    stage('Code Checkout') { // for display purposes
-   git credentialsId: '15f9d41b-09f9-49bf-83e7-e156a079e1f1', url: 'https://github.com/sravya9190/maven-examples.git'
+   git url: 'https://github.com/sravya9190/maven-examples.git'
    }
    stage('Build') {
     withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.0') {
